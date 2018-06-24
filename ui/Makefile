@@ -4,6 +4,10 @@ build/dev: build/html
 build: build/html
 	./node_modules/.bin/webpack --config webpack.config.js --mode production
 
+
+watch/build: build/html
+	./node_modules/.bin/webpack --progress --watch --config webpack.config.js --mode production
+
 build/html:
 	cp -rf resources/public __dist/
 
