@@ -9,3 +9,10 @@ build/html:
 
 clean:
 	rm -rf __dist
+
+deploy:
+	firebase deploy
+
+setup/deploy:
+	npm install -g firebase-utils
+	firebase login
