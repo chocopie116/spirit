@@ -10,7 +10,7 @@ build/html:
 clean:
 	rm -rf __dist
 
-deploy:
+deploy: build
 	firebase deploy
 
 setup/deploy:
