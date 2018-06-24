@@ -6,10 +6,10 @@ build: build/html
 
 
 watch/build: build/html
-	./node_modules/.bin/webpack --progress --watch --config webpack.config.js --mode production
+	./node_modules/.bin/webpack --progress --watch --config webpack.config.js --mode development
 
 build/html:
-	cp -rf resources/public __dist/
+	cp -rf resources/public/ __dist/
 
 clean:
 	rm -rf __dist
