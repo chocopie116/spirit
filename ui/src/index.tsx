@@ -1,4 +1,4 @@
-import * as firebase from 'firebase'
+import * as firebase from 'firebase/app'
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
