@@ -3,10 +3,6 @@ import * as ReactDOM from "react-dom";
 import * as firebase from 'firebase'
 
 import { Hello } from "./components/Hello";
-// ReactDOM.render(
-//     <Hello compiler="TypeScript" framework="React" />,
-//     document.getElementById("example")
-// );
 document.addEventListener('DOMContentLoaded', function () {
     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
     // // The Firebase SDK is initialized and available here!
@@ -18,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     //
     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
+    ReactDOM.render(
+        <Hello compiler="TypeScript" framework="React" />,
+        document.getElementById("example")
+    );
     try {
         const app = firebase.app();
         console.log(app);
